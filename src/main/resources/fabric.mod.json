@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "gemcraft",
+	"version": "${version}",
+	"name": "Gem Craft",
+	"description": "This mod explores the latent power of gems.",
+	"authors": [
+		"BrynneXVII, AstaraelZyra"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/gemcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.brynnexvii.gemcraft.GemCraft"
+		],
+		"fabric-datagen": [
+			"com.brynnexvii.gemcraft.GemCraftDataGenerator"
+		],
+		"client": [
+			"com.brynnexvii.gemcraft.GemCraftClient"
+		]
+	},
+	"mixins": [
+		"gemcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
