@@ -1,6 +1,7 @@
 package com.brynnexvii.gemcraft;
 
 import com.brynnexvii.gemcraft.block.GCBlocks;
+import com.brynnexvii.gemcraft.item.GCItemGroups;
 import com.brynnexvii.gemcraft.item.GCItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class GemCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		GCItemGroups.registerItemGroups();
+
 		GCItems.registerGCItems();
 		GCBlocks.registerGCBlocks();
 	}
