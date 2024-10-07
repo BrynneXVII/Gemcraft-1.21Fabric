@@ -1,5 +1,7 @@
 package com.brynnexvii.gemcraft;
 
+import com.brynnexvii.gemcraft.block.GCBlocks;
+import com.brynnexvii.gemcraft.item.GCItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class GemCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		GCItems.registerGCItems();
+		GCBlocks.registerGCBlocks();
 	}
 }
